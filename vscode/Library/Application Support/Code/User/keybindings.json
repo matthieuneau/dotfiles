@@ -1,0 +1,743 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+shift+f", // <-- Choose your desired shortcut here
+    "command": "workbench.action.findInFiles",
+    "args": {
+      "query": "",
+      "filesToInclude": "${fileDirname}"
+    },
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "space e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "f",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "x",
+    "command": "filesExplorer.cut",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "y",
+    "command": "filesExplorer.copy",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "p",
+    "command": "filesExplorer.paste",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "shift+k",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "cmd+k i",
+    "command": "python.setInterpreter"
+  },
+  {
+    "key": "cmd+k i",
+    "command": "-inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly"
+  },
+  {
+    "key": "cmd+k n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "-workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "cmd+k t",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalHasBeenCreated || terminalIsOpen || terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "notebook.execute",
+    "when": "\"editorLangId == 'jupyter'\""
+  },
+  {
+    "key": "cmd+; cmd+;",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "alt+cmd+right",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "cmd+'",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "alt+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "cmd+k l",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "cmd+k a",
+    "command": "workbench.action.files.saveFiles"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.reloadWindow"
+  },
+  {
+    "key": "cmd+r",
+    "command": "-workbench.action.reloadWindow",
+    "when": "isDevelopment"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "notebook.execute",
+    "when": "\"editorLangId == 'jupyter'\""
+  },
+  {
+    "key": "cmd+k k",
+    "command": "code-runner.run"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
+  },
+  {
+    "key": "cmd+; t",
+    "command": "leetcode.testSolution"
+  },
+  {
+    "key": "cmd+; s",
+    "command": "leetcode.submitSolution"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "workbench.action.closeAuxiliaryBar"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "workbench.files.action.collapseExplorerFolders"
+  },
+  {
+    "key": "ctrl+shift+u",
+    "command": "find-it-faster.resumeSearch"
+  },
+  {
+    "key": "cmd+g g",
+    "command": "lazygit.openLazygit"
+  },
+  {
+    "key": "cmd+g g",
+    "command": "-lazygit.openLazygit"
+  },
+  {
+    "key": "cmd+d",
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+d cmd+d",
+    "command": "workbench.action.debug.start",
+    "when": "debuggersAvailable && debugState == 'inactive'"
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.start",
+    "when": "debuggersAvailable && debugState == 'inactive'"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "cmd+k h",
+    "command": "notebook.cell.collapseAllCellOutputs"
+  },
+  {
+    "key": "cmd+k e",
+    "command": "-workbench.files.action.focusOpenEditorsView",
+    "when": "workbench.explorer.openEditorsView.active"
+  },
+  {
+    "key": "cmd+k e",
+    "command": "notebook.cell.expandAllCellOutputs"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "notebook.interruptExecution",
+    "when": "notebookHasSomethingRunning && notebookInterruptibleKernel"
+  },
+  {
+    "key": "cmd+d t",
+    "command": "workbench.action.debug.disconnect",
+    "when": "focusedSessionIsAttach || terminateDebuggeeSupported"
+  },
+  {
+    "key": "shift+cmd+b",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "alt+cmd+b",
+    "command": "-workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "cmd+d i",
+    "command": "workbench.action.debug.stepInto",
+    "when": "debugState != 'inactive'"
+  },
+  {
+    "key": "f11",
+    "command": "-workbench.action.debug.stepInto",
+    "when": "debugState != 'inactive'"
+  },
+  {
+    "key": "cmd+d o",
+    "command": "workbench.action.debug.stepOver",
+    "when": "debugState == 'stopped'"
+  },
+  {
+    "key": "f10",
+    "command": "-workbench.action.debug.stepOver",
+    "when": "debugState == 'stopped'"
+  },
+  {
+    "key": "cmd+d c",
+    "command": "workbench.action.debug.continue",
+    "when": "debugState == 'stopped'"
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.continue",
+    "when": "debugState == 'stopped'"
+  },
+  {
+    "key": "cmd+d r",
+    "command": "workbench.action.debug.restart",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "shift+cmd+f5",
+    "command": "-workbench.action.debug.restart",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "cmd+d t",
+    "command": "workbench.action.debug.stop",
+    "when": "inDebugMode && !focusedSessionIsAttach"
+  },
+  {
+    "key": "shift+f5",
+    "command": "-workbench.action.debug.stop",
+    "when": "inDebugMode && !focusedSessionIsAttach"
+  },
+  {
+    "key": "cmd+d b",
+    "command": "editor.debug.action.toggleBreakpoint",
+    "when": "debuggersAvailable && disassemblyViewFocus || debuggersAvailable && editorTextFocus"
+  },
+  {
+    "key": "f9",
+    "command": "-editor.debug.action.toggleBreakpoint",
+    "when": "debuggersAvailable && disassemblyViewFocus || debuggersAvailable && editorTextFocus"
+  },
+  {
+    "key": "cmd+d cmd+enter",
+    "command": "jupyter.runAndDebugCell",
+    "when": "isWorkspaceTrusted && jupyter.ispythonnotebook && !notebookKernel && notebookCellType == 'code' || isWorkspaceTrusted && jupyter.ispythonnotebook && notebookCellType == 'code' && notebookKernel =~ /^ms-toolsai.jupyter\\// && resource not in 'jupyter.notebookeditor.debugDocuments'"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "-jupyter.runAndDebugCell",
+    "when": "isWorkspaceTrusted && jupyter.ispythonnotebook && !notebookKernel && notebookCellType == 'code' || isWorkspaceTrusted && jupyter.ispythonnotebook && notebookCellType == 'code' && notebookKernel =~ /^ms-toolsai.jupyter\\// && resource not in 'jupyter.notebookeditor.debugDocuments'"
+  },
+  {
+    "key": "cmd+d t",
+    "command": "workbench.action.debug.disconnect",
+    "when": "focusedSessionIsAttach && inDebugMode"
+  },
+  {
+    "key": "shift+f5",
+    "command": "-workbench.action.debug.disconnect",
+    "when": "focusedSessionIsAttach && inDebugMode"
+  },
+  {
+    "key": "cmd+o a",
+    "command": "editor.action.fixAll"
+  },
+  {
+    "key": "ctrl+1",
+    "command": "vscode-harpoon.gotoEditor1"
+  },
+  {
+    "key": "cmd+d u",
+    "command": "workbench.action.debug.stepOut",
+    "when": "debugState == 'stopped'"
+  },
+  {
+    "key": "shift+f11",
+    "command": "-workbench.action.debug.stepOut",
+    "when": "debugState == 'stopped'"
+  },
+  {
+    "key": "cmd+d n",
+    "command": "editor.debug.action.goToNextBreakpoint"
+  },
+  {
+    "key": "cmd+k cmd+f",
+    "command": "workbench.action.toggleFullScreen",
+    "when": "!isIOS"
+  },
+  {
+    "key": "ctrl+cmd+f",
+    "command": "-workbench.action.toggleFullScreen",
+    "when": "!isIOS"
+  },
+  {
+    "key": "cmd+d e",
+    "command": "editor.debug.action.editBreakpoint"
+  },
+  {
+    "key": "cmd+o d",
+    "command": "C_Cpp.CreateDeclarationOrDefinition"
+  },
+  {
+    "key": "ctrl+2",
+    "command": "vscode-harpoon.gotoEditor2"
+  },
+  {
+    "key": "ctrl+2",
+    "command": "-workbench.action.openEditorAtIndex2"
+  },
+  {
+    "key": "ctrl+3",
+    "command": "vscode-harpoon.gotoEditor3"
+  },
+  {
+    "key": "ctrl+4",
+    "command": "vscode-harpoon.gotoEditor4"
+  },
+  {
+    "key": "ctrl+5",
+    "command": "vscode-harpoon.gotoEditor5"
+  },
+  {
+    "key": "ctrl+6",
+    "command": "vscode-harpoon.gotoEditor6"
+  },
+  {
+    "key": "cmd+h 7",
+    "command": "vscode-harpoon.addEditor7"
+  },
+  {
+    "key": "ctrl+8",
+    "command": "vscode-harpoon.gotoEditor8"
+  },
+  {
+    "key": "ctrl+7",
+    "command": "vscode-harpoon.gotoEditor7"
+  },
+  {
+    "key": "ctrl+9",
+    "command": "vscode-harpoon.gotoEditor9"
+  },
+  {
+    "key": "cmd+h cmd+h",
+    "command": "vscode-harpoon.addEditor"
+  },
+  {
+    "key": "cmd+h h",
+    "command": "vscode-harpoon.editEditors"
+  },
+  {
+    "key": "cmd+h 1",
+    "command": "vscode-harpoon.addEditor1"
+  },
+  {
+    "key": "cmd+h 2",
+    "command": "vscode-harpoon.addEditor2"
+  },
+  {
+    "key": "cmd+h 3",
+    "command": "vscode-harpoon.addEditor3"
+  },
+  {
+    "key": "cmd+h 4",
+    "command": "vscode-harpoon.addEditor4"
+  },
+  {
+    "key": "cmd+h 5",
+    "command": "vscode-harpoon.addEditor5"
+  },
+  {
+    "key": "cmd+h 6",
+    "command": "vscode-harpoon.addEditor6"
+  },
+  {
+    "key": "cmd+h 8",
+    "command": "vscode-harpoon.addEditor8"
+  },
+  {
+    "key": "cmd+h 9",
+    "command": "vscode-harpoon.addEditor9"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.view.extension.todo-tree-container"
+  },
+  {
+    "key": "cmd+d m",
+    "command": "workbench.debug.action.toggleRepl",
+    "when": "workbench.panel.repl.view.active"
+  },
+  {
+    "key": "shift+cmd+y",
+    "command": "-workbench.debug.action.toggleRepl",
+    "when": "workbench.panel.repl.view.active"
+  },
+  {
+    "key": "cmd+d v",
+    "command": "editor.debug.action.selectionToRepl"
+  },
+  {
+    "key": "cmd+d w",
+    "command": "editor.debug.action.selectionToWatch"
+  },
+  {
+    "key": "cmd+d j",
+    "command": "editor.debug.action.runToCursor"
+  },
+  {
+    "key": "cmd+d p",
+    "command": "editor.debug.action.goToPreviousBreakpoint"
+  },
+  {
+    "key": "cmd+m n",
+    "command": "editor.action.marker.next",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+f8",
+    "command": "-editor.action.marker.next",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+m p",
+    "command": "editor.action.marker.prev",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+alt+f8",
+    "command": "-editor.action.marker.prev",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+k u",
+    "command": "-workbench.action.closeUnmodifiedEditors"
+  },
+  {
+    "key": "cmd+k u",
+    "command": "notebook.cell.executeCellsAbove",
+    "when": "notebookMissingKernelExtension && notebookCellType == 'code' || notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellType == 'code' && notebookKernelSourceCount > 0"
+  },
+  {
+    "key": "cmd+o",
+    "command": "-workbench.action.files.openFile",
+    "when": "false"
+  },
+  {
+    "key": "cmd+o",
+    "command": "-workbench.action.files.openFolderViaWorkspace",
+    "when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
+  },
+  {
+    "key": "cmd+o",
+    "command": "-workbench.action.files.openFileFolder",
+    "when": "isMacNative && openFolderWorkspaceSupport"
+  },
+  {
+    "key": "cmd+o",
+    "command": "-workbench.action.files.openLocalFileFolder",
+    "when": "remoteFileDialogVisible"
+  },
+  {
+    "key": "cmd+o o",
+    "command": "outline.focus"
+  },
+  {
+    "key": "cmd+o e",
+    "command": "workbench.explorer.fileView.focus"
+  },
+  {
+    "key": "cmd+k k",
+    "command": "notebook.execute",
+    "when": "editorLangId == 'jupyter-notebook'"
+  },
+  {
+    "key": "cmd+k r",
+    "command": "-workbench.action.files.revealActiveFileInWindows"
+  },
+  {
+    "key": "cmd+k r",
+    "command": "python.startNativeREPL"
+  },
+  {
+    "key": "cmd+o c",
+    "command": "gitlens.diffWithRevisionFrom"
+  },
+  {
+    "key": "cmd+g b",
+    "command": "gitlens.toggleFileBlame",
+    "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:blameable'"
+  },
+  {
+    "key": "alt+b",
+    "command": "-gitlens.toggleFileBlame",
+    "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:blameable'"
+  },
+  {
+    "key": "cmd+g b",
+    "command": "gitlens.toggleFileBlame",
+    "when": "editorTextFocus && config.gitlens.keymap == 'chorded' && resource in 'gitlens:tabs:blameable'"
+  },
+  {
+    "key": "alt+cmd+g b",
+    "command": "-gitlens.toggleFileBlame",
+    "when": "editorTextFocus && config.gitlens.keymap == 'chorded' && resource in 'gitlens:tabs:blameable'"
+  },
+  {
+    "key": "cmd+o b",
+    "command": "gitlens.openCurrentBranchOnRemote"
+  },
+  {
+    "key": "cmd+o cmd+c",
+    "command": "gitlens.openCommitOnRemote"
+  },
+  {
+    "key": "cmd+o f",
+    "command": "gitlens.openFileOnRemote"
+  },
+  {
+    "key": "cmd+o d",
+    "command": "git.openChange"
+  },
+  {
+    "key": "cmd+g r",
+    "command": "git.addRemote",
+    "when": "!operationInProgress"
+  },
+  {
+    "key": "cmd+o cmd+d",
+    "command": "git.viewChanges",
+    "when": "!operationInProgress"
+  },
+  {
+    "key": "cmd+g l",
+    "command": "git.pull",
+    "when": "!operationInProgress"
+  },
+  {
+    "key": "cmd+d l",
+    "command": "editor.debug.action.addLogPoint"
+  },
+  {
+    "key": "cmd+d x",
+    "command": "workbench.debug.viewlet.action.removeAllBreakpoints"
+  },
+  {
+    "key": "cmd+d a",
+    "command": "workbench.debug.viewlet.action.enableAllBreakpoints",
+    "when": "debuggersAvailable"
+  },
+  {
+    "key": "cmd+g n",
+    "command": "merge-conflict.next",
+    "when": "!isMergeEditor"
+  },
+  {
+    "key": "cmd+g cmd+a",
+    "command": "merge-conflict.accept.all-both",
+    "when": "!isMergeEditor"
+  },
+  {
+    "key": "cmd+g a",
+    "command": "merge-conflict.accept.both",
+    "when": "!isMergeEditor"
+  },
+  {
+    "key": "cmd+g c",
+    "command": "merge-conflict.accept.current",
+    "when": "!isMergeEditor"
+  },
+  {
+    "key": "cmd+g cmd+c",
+    "command": "merge-conflict.accept.all-current",
+    "when": "!isMergeEditor"
+  },
+  {
+    "key": "cmd+g cmd+i",
+    "command": "merge-conflict.accept.all-incoming",
+    "when": "!isMergeEditor"
+  },
+  {
+    "key": "cmd+g i",
+    "command": "merge-conflict.accept.incoming",
+    "when": "!isMergeEditor"
+  },
+  {
+    "key": "cmd+g p",
+    "command": "merge-conflict.previous",
+    "when": "!isMergeEditor"
+  },
+  {
+    "key": "cmd+g p",
+    "command": "git.push",
+    "when": "!operationInProgress && !isMergeEditor"
+  },
+  {
+    "key": "cmd+g o",
+    "command": "gitlens.createPullRequestOnRemote"
+  },
+  {
+    "key": "cmd+o k",
+    "command": "workbench.view.extension.kubernetesView",
+    "when": "viewContainer.workbench.view.extension.kubernetesView.enabled"
+  },
+  {
+    "key": "cmd+k c",
+    "command": "copyFilePath"
+  },
+  {
+    "key": "alt+cmd+c",
+    "command": "-copyFilePath",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "cmd+k cmd+c",
+    "command": "copyRelativeFilePath"
+  },
+  {
+    "key": "shift+alt+cmd+c",
+    "command": "-copyRelativeFilePath",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "cmd+k y",
+    "command": "extension.copyPythonPath"
+  },
+  {
+    "key": "cmd+o cmd+f",
+    "command": "gitlens.openFileOnRemoteFrom"
+  },
+  {
+    "key": "cmd+o cmd+b",
+    "command": "gitlens.openBranchOnRemote"
+  },
+  {
+    "key": "cmd+b",
+    "command": "-markdown.extension.editing.toggleBold",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+  },
+  {
+    "key": "cmd+o r",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
+  },
+  {
+    "key": "cmd+g h",
+    "command": "gitlens.toggleFileHeatmap"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "leetcode.searchProblem"
+  },
+  {
+    "key": "cmd+k f",
+    "command": "workbench.files.action.compareFileWith",
+    "when": "activeEditor"
+  },
+  {
+    "key": "cmd+k p",
+    "command": "workbench.files.action.compareWithClipboard"
+  },
+  {
+    "key": "cmd+k c",
+    "command": "-workbench.files.action.compareWithClipboard"
+  },
+  {
+    "key": "cmd+k j",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "panelAlignment == 'center' || panelPosition != 'bottom' && panelPosition != 'top'"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "cmd+o p",
+    "command": "leetCodeExplorer.focus"
+  },
+  {
+    "key": "ctrl+k n",
+    "command": "notifications.focusToasts"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.focusPreviousGroup"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "git.ignore",
+    "when": "!operationInProgress"
+  }
+]
