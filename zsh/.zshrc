@@ -120,6 +120,7 @@ alias y=yazi
 alias cd=z
 alias lg=lazygit
 alias lzd=lazydocker
+alias awsv="aws-vault exec sso-staging-engineering --"
 #unalias fd	# some plugin aliased it to find
 
 # Example aliases
