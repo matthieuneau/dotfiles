@@ -163,6 +163,9 @@ export PATH="$GOPATH/bin:$PATH"
 # Point DATADOG_ROOT to ~/dd symlink
 export DATADOG_ROOT="$HOME/dd"
 
+# Allow interaction with kaggle API
+export KAGGLE_API_TOKEN=KGAT_0c7513e14e359cef47320a78630ee7dd
+
 # Tell the devenv vm to mount $GOPATH/src rather than just dd-go
 export MOUNT_ALL_GO_SRC=1
 
