@@ -134,7 +134,8 @@
   },
   {
     "key": "cmd+k k",
-    "command": "code-runner.run"
+    "command": "code-runner.run",
+    "when": "!notebookEditorFocus"
   },
   {
     "key": "ctrl+alt+n",
@@ -512,9 +513,8 @@
     "command": "workbench.explorer.fileView.focus"
   },
   {
-    "key": "cmd+k k",
-    "command": "notebook.execute",
-    "when": "editorLangId == 'jupyter-notebook'"
+    "key": "cmd+k c",
+    "command": "notebook.execute"
   },
   {
     "key": "cmd+k r",
