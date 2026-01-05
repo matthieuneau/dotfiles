@@ -87,6 +87,7 @@ zstyle ':omz:plugins:alias-finder' autoload yes # disabled by default
 source $ZSH/oh-my-zsh.sh
 
 # Vi mode is now handled by zsh-vi-mode plugin
+export ZVM_VI_INSERT_ESCAPE_BINDKEY=jj
 
 # User configuration
 
