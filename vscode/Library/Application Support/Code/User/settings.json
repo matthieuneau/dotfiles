@@ -273,6 +273,18 @@
   "vim.useSystemClipboard": true,
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.layoutControl.enabled": false,
+  "workbench.colorCustomizations": {
+    "[Dev Container: *]": {
+      "titleBar.activeBackground": "#1e3a5f",
+      "titleBar.activeForeground": "#ffffff",
+      "titleBar.inactiveBackground": "#152d49",
+      "titleBar.inactiveForeground": "#cccccc",
+      "statusBar.background": "#1e3a5f",
+      "statusBar.foreground": "#ffffff",
+      "statusBarItem.remoteBackground": "#16825d",
+      "statusBarItem.remoteForeground": "#ffffff"
+    }
+  },
   "chat.commandCenter.enabled": false,
   "window.commandCenter": false,
   "jupyter.askForKernelRestart": false,
@@ -412,5 +424,8 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
+  },
+  "security.promptForRemoteFileProtocolHandling": false,
+  "window.confirmSaveUntitledWorkspace": false,
+  "datadog.staticAnalysis.notification.suppressOnboarding": true
 }
