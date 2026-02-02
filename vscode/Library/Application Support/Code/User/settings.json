@@ -1,431 +1,436 @@
 {
-  "vim.surround": true,
-  "dev.containers.defaultExtensions": [
-    "ms-python.python",
-    "github.copilot",
-    "formulahendry.code-runner",
-    "anthropic.claude-code",
-    "tobias-z.vscode-harpoon"
-  ],
-  "remote.SSH.defaultExtensions": [
-    "ms-python.python",
-    "github.copilot",
-    "formulahendry.code-runner",
-    "anthropic.claude-code",
-    "tobias-z.vscode-harpoon"
-  ],
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
-  },
-  "python.sortImports.args": [
-    "--profile=black"
-  ],
-  "workbench.editorAssociations": {
-    "*.exe": "default"
-  },
-  "[python]": {
-    "editor.formatOnType": true,
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.codeActionsOnSave": {
-      "source.fixAll.ruff": "explicit",
-      "source.organizeImports.ruff": "explicit"
-    },
-  },
-  "ruff.configurationPreference": "filesystemFirst",
-  "editor.inlineSuggest.enabled": true,
-  "C_Cpp.default.compilerPath": "c:\\msys64\\mingw64.exe",
-  "security.workspace.trust.untrustedFiles": "open",
-  "code-runner.runInTerminal": true,
-  "files.autoGuessEncoding": true,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "yaml": true,
-    "python": true,
-    "shellscript": false
-  },
-  "sqltools.connections": [
-    {
-      "mysqlOptions": {
-        "authProtocol": "default"
-      },
-      "previewLimit": 50,
-      "server": "localhost",
-      "port": 3306,
-      "driver": "MySQL",
-      "name": "test_local",
-      "database": "mysql",
-      "username": "root",
-      "askForPassword": true
-    }
-  ],
-  "git.openRepositoryInParentFolders": "never",
-  "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
-  "editor.defaultFormatter": "charliermarsh.ruff",
-  "editor.formatOnPaste": true,
-  "workbench.iconTheme": "material-icon-theme",
-  "explorer.confirmDragAndDrop": false,
-  "C_Cpp.default.cppStandard": "c++20",
-  "notebook.formatOnSave.enabled": true,
-  "leetcode.defaultLanguage": "python3",
-  "leetcode.hint.configWebviewMarkdown": false,
-  "leetcode.hint.commandShortcut": false,
-  "indentRainbow.indicatorStyle": "light",
-  "remote.SSH.defaultForwardedPorts": [],
-  "remote.SSH.localServerDownload": "auto",
-  "dotfiles.repository": "https://github.com/matthieuneau/dotfiles",
-  "dotfiles.targetPath": "~/dotfiles",
-  "dotfiles.installCommand": "cd ~/dotfiles && stow */",
-  "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.profiles.linux": {
-    "zsh": {
-      "path": "/bin/zsh",
-      "args": [
-        "-l"
-      ]
-    }
-  },
-  "terminal.integrated.scrollback": 2000,
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "0"
-      ],
-      "after": [
-        "^"
-      ]
-    },
-    {
-      "before": [
-        "^"
-      ],
-      "after": [
-        "0"
-      ]
-    },
-    {
-      "before": [
-        "Y"
-      ],
-      "after": [
-        "y",
-        "$"
-      ]
-    }
-  ],
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "j",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
-  "vim.normalModeKeyBindings": [
-    {
-      "before": [
-        "g",
-        "D"
-      ],
-      "commands": [
-        {
-          "command": "editor.action.goToTypeDefinition"
-        }
-      ]
-    },
-    {
-      "before": [
-        "g",
-        "r"
-      ],
-      "commands": [
-        "editor.action.referenceSearch.trigger"
-      ]
-    },
-    {
-      "before": [
-        "g",
-        "t"
-      ],
-      "commands": [
-        "editor.action.goToTypeDefinition"
-      ]
-    },
-    {
-      "before": [
-        "g",
-        "q"
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ]
-    },
-    {
-      "before": [
-        "g",
-        "i"
-      ],
-      "commands": [
-        "editor.action.goToImplementation"
-      ]
-    },
-    {
-      "before": [
-        "g",
-        "h"
-      ],
-      "commands": [
-        "editor.action.showDefinitionPreviewHover"
-      ]
-    },
-    {
-      "before": [
-        "g",
-        "p",
-        "d"
-      ],
-      "commands": [
-        "editor.action.peekDefinition"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "e"
-      ],
-      "commands": [
-        "workbench.view.explorer"
-      ]
-    }
-  ],
-  "vim.leader": "<space>",
-  "editor.cursorBlinking": "solid",
-  "cmake.configureOnOpen": true,
-  "cSpell.enableFiletypes": [
-    "!csharp",
-    "!erlang",
-    "!swift"
-  ],
-  "vim.useCtrlKeys": true,
-  "editor.formatOnSave": true,
-  "vim.foldfix": true,
-  "liveServer.settings.CustomBrowser": "chrome",
-  "liveServer.settings.wait": 200,
-  "liveServer.settings.NoBrowser": false,
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "liveServer.settings.ChromeDebuggingAttachment": false,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "git.confirmSync": false,
-  "workbench.sideBar.location": "right",
-  "[dotenv]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
-  "editor.lineNumbers": "relative",
-  "git.suggestSmartCommit": false,
-  "code-runner.saveFileBeforeRun": true,
-  "code-runner.saveAllFilesBeforeRun": true,
-  "[ignore]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
-  "files.associations": {
-    "*.rmd": "markdown",
-    "*.tpl": "helm",
-  },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "remote.autoForwardPortsSource": "hybrid",
-  "database-client.autoSync": true,
-  "editor.inlineSuggest.syntaxHighlightingEnabled": true,
-  "vim.highlightedyank.enable": true,
-  "notebook.defaultFormatter": "charliermarsh.ruff",
-  "window.zoomLevel": 2,
-  "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
-  },
-  "leetcode.workspaceFolder": "/Users/matthieu.neau/.leetcode",
-  "leetcode.hint.commentDescription": false,
-  "[shellscript]": {
-    "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
-  },
-  "git.autofetch": true,
-  "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "workbench.startupEditor": "none",
-  "editor.minimap.autohide": "mouseover",
-  "cmake.showOptionsMovedNotification": false,
-  "editor.unicodeHighlight.ambiguousCharacters": false,
-  "editor.minimap.enabled": false,
-  "terminal.integrated.fontSize": 13,
-  "vim.timeout": 250,
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "vim.useSystemClipboard": true,
-  "workbench.colorTheme": "Catppuccin Mocha",
-  "workbench.layoutControl.enabled": false,
-  "workbench.colorCustomizations": {
-    "[Dev Container: *]": {
-      "titleBar.activeBackground": "#1e3a5f",
-      "titleBar.activeForeground": "#ffffff",
-      "titleBar.inactiveBackground": "#152d49",
-      "titleBar.inactiveForeground": "#cccccc",
-      "statusBar.background": "#1e3a5f",
-      "statusBar.foreground": "#ffffff",
-      "statusBarItem.remoteBackground": "#16825d",
-      "statusBarItem.remoteForeground": "#ffffff"
-    }
-  },
-  "chat.commandCenter.enabled": false,
-  "window.commandCenter": false,
-  "jupyter.askForKernelRestart": false,
-  "notebook.output.scrolling": true,
-  "notebook.output.textLineLimit": 20,
-  "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
-  "workbench.editor.showTabs": "single",
-  "debug.onTaskErrors": "debugAnyway",
-  "editor.quickSuggestions": {
-    "strings": "on"
-  },
-  "workbench.activityBar.location": "hidden",
-  "anyscalecompute.ray-distributed-debugger.initialized": true,
-  "code-runner.executorMap": {
-    "javascript": "node",
-    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "zig": "zig run",
-    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "php": "php",
-    "python": "python -u",
-    "perl": "perl",
-    "perl6": "perl6",
-    "ruby": "ruby",
-    "go": "go run",
-    "lua": "lua",
-    "groovy": "groovy",
-    "powershell": "powershell -ExecutionPolicy ByPass -File",
-    "bat": "cmd /c",
-    "shellscript": "bash",
-    "fsharp": "fsi",
-    "csharp": "scriptcs",
-    "vbscript": "cscript //Nologo",
-    "typescript": "ts-node",
-    "coffeescript": "coffee",
-    "scala": "scala",
-    "swift": "swift",
-    "julia": "julia",
-    "crystal": "crystal",
-    "ocaml": "ocaml",
-    "r": "Rscript",
-    "applescript": "osascript",
-    "clojure": "lein exec",
-    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
-    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
-    "racket": "racket",
-    "scheme": "csi -script",
-    "ahk": "autohotkey",
-    "autoit": "autoit3",
-    "dart": "dart",
-    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
-    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
-    "haskell": "runghc",
-    "nim": "nim compile --verbosity:0 --hints:off --run",
-    "lisp": "sbcl --script",
-    "kit": "kitc --run",
-    "v": "v run",
-    "sass": "sass --style expanded",
-    "scss": "scss --style expanded",
-    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
-    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "sml": "cd $dir && sml $fileName",
-    "mojo": "mojo run",
-    "erlang": "escript",
-    "spwn": "spwn build",
-    "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
-    "gleam": "gleam run -"
-  },
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
-  },
-  "datadog.telemetry.setup.suppressMigrationNotification": true,
-  "datadog.telemetry.setup.enableTelemetry": "enabled",
-  "python.analysis.typeCheckingMode": "standard",
-  "vim.handleKeys": {
-    "<C-d>": true,
-    "<C-s>": false,
-    "<C-z>": false
-  },
-  "find-it-faster.general.openFileInPreviewEditor": true,
-  "find-it-faster.general.useTerminalInEditor": true,
-  "find-it-faster.general.additionalSearchLocations": [],
-  "find-it-faster.general.useWorkspaceSearchExcludes": true,
-  "gopls": {
-    "ui.semanticTokens": true
-  },
-  "todo-tree.general.tags": [
-    "BUG",
-    "HACK",
-    "FIXME",
-    "TODO",
-    "XXX",
-    "[ ]",
-    "[x]",
-    "CHECK"
-  ],
-  "bazel.lsp.command": "starpls",
-  "outline.showConstants": false,
-  "git.blame.editorDecoration.enabled": true,
-  "git.blame.statusBarItem.enabled": false,
-  "[terraform]": {
-    "editor.defaultFormatter": "hashicorp.terraform"
-  },
-  "files.exclude": {
-    "*uv.lock": true
-  },
-  "editor.fontFamily": "'Ox Proto Nerd Font', Menlo, Monaco, 'Courier New', monospace",
-  "[helm]": {},
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "[starlark]": {
-    "editor.defaultFormatter": "BazelBuild.vscode-bazel"
-  },
-  "editor.gotoLocation.alternativeDeclarationCommand": "",
-  "editor.gotoLocation.alternativeTypeDefinitionCommand": "",
-  "vs-kubernetes": {
-    "vs-kubernetes.crd-code-completion": "enabled"
-  },
-  "[dockercompose]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "advanced",
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": true
-    },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "security.promptForRemoteFileProtocolHandling": false,
-  "window.confirmSaveUntitledWorkspace": false,
-  "datadog.staticAnalysis.notification.suppressOnboarding": true
+	"vim.surround": true,
+	"dev.containers.defaultExtensions": [
+		"ms-python.python",
+		"github.copilot",
+		"formulahendry.code-runner",
+		"anthropic.claude-code",
+		"tobias-z.vscode-harpoon",
+		"anyscalecompute.ray-distributed-debugger",
+		"ms-toolsai.jupyter",
+	],
+	"remote.SSH.defaultExtensions": [
+		"ms-python.python",
+		"github.copilot",
+		"formulahendry.code-runner",
+		"anthropic.claude-code",
+		"tobias-z.vscode-harpoon",
+	],
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit",
+	},
+	"python.sortImports.args": [
+		"--profile=black",
+	],
+	"workbench.editorAssociations": {
+		"*.exe": "default",
+	},
+	"[python]": {
+		"editor.formatOnType":             true,
+		"editor.defaultFormatter":         "charliermarsh.ruff",
+		"diffEditor.ignoreTrimWhitespace": false,
+		"editor.codeActionsOnSave": {
+			"source.fixAll.ruff":          "explicit",
+			"source.organizeImports.ruff": "explicit",
+		},
+	},
+	"ruff.configurationPreference":            "filesystemFirst",
+	"editor.inlineSuggest.enabled":            true,
+	"C_Cpp.default.compilerPath":              "c:\\msys64\\mingw64.exe",
+	"security.workspace.trust.untrustedFiles": "open",
+	"code-runner.runInTerminal":               true,
+	"files.autoGuessEncoding":                 true,
+	"github.copilot.enable": {
+		"*":           true,
+		"plaintext":   true,
+		"markdown":    false,
+		"scminput":    false,
+		"yaml":        true,
+		"python":      true,
+		"shellscript": false,
+	},
+	"sqltools.connections": [
+		{
+			"mysqlOptions": {
+				"authProtocol": "default",
+			},
+			"previewLimit":   50,
+			"server":         "localhost",
+			"port":           3306,
+			"driver":         "MySQL",
+			"name":           "test_local",
+			"database":       "mysql",
+			"username":       "root",
+			"askForPassword": true,
+		},
+	],
+	"git.openRepositoryInParentFolders": "never",
+	"[cpp]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools",
+	},
+	"editor.defaultFormatter":                  "charliermarsh.ruff",
+	"editor.formatOnPaste":                     true,
+	"workbench.iconTheme":                      "material-icon-theme",
+	"explorer.confirmDragAndDrop":              false,
+	"C_Cpp.default.cppStandard":                "c++20",
+	"notebook.formatOnSave.enabled":            true,
+	"leetcode.defaultLanguage":                 "python3",
+	"leetcode.hint.configWebviewMarkdown":      false,
+	"leetcode.hint.commandShortcut":            false,
+	"indentRainbow.indicatorStyle":             "light",
+	"remote.SSH.defaultForwardedPorts":         [],
+	"remote.SSH.localServerDownload":           "auto",
+	"dotfiles.repository":                      "https://github.com/matthieuneau/dotfiles",
+	"dotfiles.targetPath":                      "~/dotfiles",
+	"dotfiles.installCommand":                  "cd ~/dotfiles && stow */",
+	"terminal.integrated.defaultProfile.linux": "zsh",
+	"terminal.integrated.profiles.linux": {
+		"zsh": {
+			"path": "/bin/zsh",
+			"args": [
+				"-l",
+			],
+		},
+	},
+	"terminal.integrated.scrollback": 2000,
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"0",
+			],
+			"after": [
+				"^",
+			],
+		},
+		{
+			"before": [
+				"^",
+			],
+			"after": [
+				"0",
+			],
+		},
+		{
+			"before": [
+				"Y",
+			],
+			"after": [
+				"y",
+				"$",
+			],
+		},
+	],
+	"vim.insertModeKeyBindings": [
+		{
+			"before": [
+				"j",
+				"j",
+			],
+			"after": [
+				"<Esc>",
+			],
+		},
+	],
+	"vim.normalModeKeyBindings": [
+		{
+			"before": [
+				"g",
+				"D",
+			],
+			"commands": [
+				{
+					"command": "editor.action.goToTypeDefinition",
+				},
+			],
+		},
+		{
+			"before": [
+				"g",
+				"r",
+			],
+			"commands": [
+				"editor.action.referenceSearch.trigger",
+			],
+		},
+		{
+			"before": [
+				"g",
+				"t",
+			],
+			"commands": [
+				"editor.action.goToTypeDefinition",
+			],
+		},
+		{
+			"before": [
+				"g",
+				"q",
+			],
+			"commands": [
+				"editor.action.quickFix",
+			],
+		},
+		{
+			"before": [
+				"g",
+				"i",
+			],
+			"commands": [
+				"editor.action.goToImplementation",
+			],
+		},
+		{
+			"before": [
+				"g",
+				"h",
+			],
+			"commands": [
+				"editor.action.showDefinitionPreviewHover",
+			],
+		},
+		{
+			"before": [
+				"g",
+				"p",
+				"d",
+			],
+			"commands": [
+				"editor.action.peekDefinition",
+			],
+		},
+		{
+			"before": [
+				"<leader>",
+				"e",
+			],
+			"commands": [
+				"workbench.view.explorer",
+			],
+		},
+	],
+	"vim.leader":            "<space>",
+	"editor.cursorBlinking": "solid",
+	"cmake.configureOnOpen": true,
+	"cSpell.enableFiletypes": [
+		"!csharp",
+		"!erlang",
+		"!swift",
+	],
+	"vim.useCtrlKeys":                   true,
+	"editor.formatOnSave":               true,
+	"vim.foldfix":                       true,
+	"liveServer.settings.CustomBrowser": "chrome",
+	"liveServer.settings.wait":          200,
+	"liveServer.settings.NoBrowser":     false,
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features",
+	},
+	"liveServer.settings.ChromeDebuggingAttachment": false,
+	"liveServer.settings.donotShowInfoMsg":          true,
+	"git.confirmSync":                               false,
+	"workbench.sideBar.location":                    "right",
+	"[dotenv]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format",
+	},
+	"editor.lineNumbers":                "relative",
+	"git.suggestSmartCommit":            false,
+	"code-runner.saveFileBeforeRun":     true,
+	"code-runner.saveAllFilesBeforeRun": true,
+	"[ignore]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format",
+	},
+	"files.associations": {
+		"*.rmd": "markdown",
+		"*.tpl": "helm",
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features",
+	},
+	"remote.autoForwardPortsSource":                  "hybrid",
+	"database-client.autoSync":                       true,
+	"editor.inlineSuggest.syntaxHighlightingEnabled": true,
+	"vim.highlightedyank.enable":                     true,
+	"notebook.defaultFormatter":                      "charliermarsh.ruff",
+	"window.zoomLevel":                               2,
+	"[xml]": {
+		"editor.defaultFormatter": "redhat.vscode-xml",
+	},
+	"leetcode.workspaceFolder":         "/Users/matthieu.neau/.leetcode",
+	"leetcode.hint.commentDescription": false,
+	"[shellscript]": {
+		"editor.defaultFormatter": "mads-hartmann.bash-ide-vscode",
+	},
+	"git.autofetch":                                   true,
+	"terminal.integrated.enableMultiLinePasteWarning": "never",
+	"workbench.startupEditor":                         "none",
+	"editor.minimap.autohide":                         "mouseover",
+	"cmake.showOptionsMovedNotification":              false,
+	"editor.unicodeHighlight.ambiguousCharacters":     false,
+	"editor.minimap.enabled":                          false,
+	"terminal.integrated.fontSize":                    13,
+	"vim.timeout":                                     250,
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features",
+	},
+	"vim.useSystemClipboard":          true,
+	"workbench.colorTheme":            "Catppuccin Mocha",
+	"workbench.layoutControl.enabled": false,
+	"workbench.colorCustomizations": {
+		"[Dev Container: *]": {
+			"titleBar.activeBackground":      "#1e3a5f",
+			"titleBar.activeForeground":      "#ffffff",
+			"titleBar.inactiveBackground":    "#152d49",
+			"titleBar.inactiveForeground":    "#cccccc",
+			"statusBar.background":           "#1e3a5f",
+			"statusBar.foreground":           "#ffffff",
+			"statusBarItem.remoteBackground": "#16825d",
+			"statusBarItem.remoteForeground": "#ffffff",
+		},
+	},
+	"chat.commandCenter.enabled":    false,
+	"window.commandCenter":          false,
+	"jupyter.askForKernelRestart":   false,
+	"notebook.output.scrolling":     true,
+	"notebook.output.textLineLimit": 20,
+	"[c]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools",
+	},
+	"workbench.editor.showTabs": "single",
+	"debug.onTaskErrors":        "debugAnyway",
+	"editor.quickSuggestions": {
+		"strings": "on",
+	},
+	"workbench.activityBar.location":                       "hidden",
+	"anyscalecompute.ray-distributed-debugger.initialized": true,
+	"code-runner.executorMap": {
+		"javascript":         "node",
+		"java":               "cd $dir && javac $fileName && java $fileNameWithoutExt",
+		"c":                  "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"zig":                "zig run",
+		"cpp":                "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"objective-c":        "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"php":                "php",
+		"python":             "python -u",
+		"perl":               "perl",
+		"perl6":              "perl6",
+		"ruby":               "ruby",
+		"go":                 "go run",
+		"lua":                "lua",
+		"groovy":             "groovy",
+		"powershell":         "powershell -ExecutionPolicy ByPass -File",
+		"bat":                "cmd /c",
+		"shellscript":        "bash",
+		"fsharp":             "fsi",
+		"csharp":             "scriptcs",
+		"vbscript":           "cscript //Nologo",
+		"typescript":         "ts-node",
+		"coffeescript":       "coffee",
+		"scala":              "scala",
+		"swift":              "swift",
+		"julia":              "julia",
+		"crystal":            "crystal",
+		"ocaml":              "ocaml",
+		"r":                  "Rscript",
+		"applescript":        "osascript",
+		"clojure":            "lein exec",
+		"haxe":               "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+		"rust":               "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+		"racket":             "racket",
+		"scheme":             "csi -script",
+		"ahk":                "autohotkey",
+		"autoit":             "autoit3",
+		"dart":               "dart",
+		"pascal":             "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+		"d":                  "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+		"haskell":            "runghc",
+		"nim":                "nim compile --verbosity:0 --hints:off --run",
+		"lisp":               "sbcl --script",
+		"kit":                "kitc --run",
+		"v":                  "v run",
+		"sass":               "sass --style expanded",
+		"scss":               "scss --style expanded",
+		"less":               "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+		"FortranFreeForm":    "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"fortran-modern":     "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"fortran":            "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+		"sml":                "cd $dir && sml $fileName",
+		"mojo":               "mojo run",
+		"erlang":             "escript",
+		"spwn":               "spwn build",
+		"pkl":                "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
+		"gleam":              "gleam run -",
+	},
+	"[go]": {
+		"editor.defaultFormatter": "golang.go",
+	},
+	"datadog.telemetry.setup.suppressMigrationNotification": true,
+	"datadog.telemetry.setup.enableTelemetry":               "enabled",
+	"python.analysis.typeCheckingMode":                      "standard",
+	"vim.handleKeys": {
+		"<C-d>": true,
+		"<C-s>": false,
+		"<C-z>": false,
+	},
+	"find-it-faster.general.openFileInPreviewEditor":    true,
+	"find-it-faster.general.useTerminalInEditor":        true,
+	"find-it-faster.general.additionalSearchLocations":  [],
+	"find-it-faster.general.useWorkspaceSearchExcludes": true,
+	"gopls": {
+		"ui.semanticTokens": true,
+	},
+	"todo-tree.general.tags": [
+		"BUG",
+		"HACK",
+		"FIXME",
+		"TODO",
+		"XXX",
+		"[ ]",
+		"[x]",
+		"CHECK",
+	],
+	"bazel.lsp.command":                  "starpls",
+	"outline.showConstants":              false,
+	"git.blame.editorDecoration.enabled": true,
+	"git.blame.statusBarItem.enabled":    false,
+	"[terraform]": {
+		"editor.defaultFormatter": "hashicorp.terraform",
+	},
+	"files.exclude": {
+		"*uv.lock": true,
+	},
+	"editor.fontFamily":                          "'Ox Proto Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+	"[helm]":                                     {},
+	"github.copilot.nextEditSuggestions.enabled": true,
+	"[starlark]": {
+		"editor.defaultFormatter": "BazelBuild.vscode-bazel",
+	},
+	"editor.gotoLocation.alternativeDeclarationCommand":    "",
+	"editor.gotoLocation.alternativeTypeDefinitionCommand": "",
+	"vs-kubernetes": {
+		"vs-kubernetes.crd-code-completion": "enabled",
+	},
+	"[dockercompose]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize":      2,
+		"editor.autoIndent":   "advanced",
+		"editor.quickSuggestions": {
+			"other":    true,
+			"comments": false,
+			"strings":  true,
+		},
+		"editor.defaultFormatter": "redhat.vscode-yaml",
+	},
+	"[github-actions-workflow]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml",
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features",
+	},
+	"security.promptForRemoteFileProtocolHandling":           false,
+	"window.confirmSaveUntitledWorkspace":                    false,
+	"datadog.staticAnalysis.notification.suppressOnboarding": true,
+	"terminal.integrated.tabs.enabled":                       false,
+	"go.toolsManagement.autoUpdate": true,
+	"claudeCode.preferredLocation": "panel",
 }
