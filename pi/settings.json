@@ -46,7 +46,7 @@
         "id": "worktree",
         "statusKey": "worktree",
         "position": "right",
-        "prefix": "🌳",
+        "prefix": "\ud83c\udf33",
         "color": "accent",
         "hideWhenMissing": true
       }
@@ -75,5 +75,8 @@
       }
     ]
   },
-  "deviceId": "75a9dd0a-cf0e-4d97-b8bf-b1bfdeb26e48"
+  "deviceId": "75a9dd0a-cf0e-4d97-b8bf-b1bfdeb26e48",
+  "extensions": [
+    "-builtin:mcp"
+  ]
 }
