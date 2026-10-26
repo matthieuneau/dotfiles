@@ -1,0 +1,79 @@
+{
+  "lastChangelogVersion": "1.1.0",
+  "theme": "dark",
+  "packages": [
+    "npm:pi-mcp-adapter@2.34.0",
+    "npm:pi-subagents",
+    "npm:pi-markdown-preview",
+    "npm:pi-powerline-footer",
+    "npm:@datadog/pi-plugin",
+    "../../dd/datadog-pi-packages/packages/refresh-models",
+    "../../dd/datadog-pi-packages/packages/research-web",
+    "npm:pi-web-access",
+    "npm:pi-vim",
+    "npm:@ff-labs/pi-fff",
+    "npm:pi-lsp",
+    "npm:@pi-unipi/notify",
+    "npm:@trevonistrevon/pi-loop",
+    "npm:@zhcsyncer/pi-recap",
+    "npm:@narumitw/pi-btw",
+    "npm:@narumitw/pi-retry",
+    "npm:@plannotator/pi-extension",
+    "npm:pi-memory",
+    "npm:@llblab/pi-telegram",
+    "../../dd/datadog-pi-packages/packages/compaction-continue",
+    "../../dd/datadog-pi-packages/packages/session-cost",
+    "../../dd/datadog-pi-packages/packages/pi-npm-guard",
+    "../../dd/datadog-pi-packages/packages/npm-update-cooldown",
+    "../../dd/datadog-pi-packages/packages/mcp-port-forward",
+    "npm:@getpipher/vision",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:billion-context",
+    "npm:@juicesharp/rpiv-todo",
+    "npm:openwiki"
+  ],
+  "defaultProvider": "ai-gw-logical",
+  "defaultModel": "glm-5-3",
+  "defaultThinkingLevel": "high",
+  "editorPaddingX": 0,
+  "outputPad": 1,
+  "markdown": {
+    "mermaid": "streaming"
+  },
+  "powerline": {
+    "customItems": [
+      {
+        "id": "worktree",
+        "statusKey": "worktree",
+        "position": "right",
+        "prefix": "🌳",
+        "color": "accent",
+        "hideWhenMissing": true
+      }
+    ]
+  },
+  "collapseChangelog": false,
+  "tuiMode": "regular",
+  "enabledModels": [
+    "ai-gw-logical/kimi-k3",
+    "ai-gw-logical/glm-5-3",
+    "ai-gw-logical/deepseek-v4-1-flash",
+    "openai-codex/gpt-6-astra"
+  ],
+  "hideThinkingBlock": true,
+  "npmCommand": [
+    "/Users/matthieu.neau/dd/datadog-pi-packages/packages/pi-npm-guard/bin/pi-npm-guard.mjs"
+  ],
+  "npmGuard": {
+    "enabled": true,
+    "middlewares": [
+      {
+        "path": "/Users/matthieu.neau/dd/datadog-pi-packages/packages/npm-update-cooldown/middleware/cooldown.mjs",
+        "config": {
+          "days": 2
+        }
+      }
+    ]
+  },
+  "deviceId": "75a9dd0a-cf0e-4d97-b8bf-b1bfdeb26e48"
+}

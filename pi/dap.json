@@ -1,0 +1,33 @@
+{
+  "adapters": {
+    "debugpy": {
+      "command": "python",
+      "args": ["-m", "debugpy.adapter"],
+      "languages": ["python"],
+      "fileTypes": [".py"],
+      "rootMarkers": ["pyproject.toml", "setup.py", "requirements.txt", "Pipfile", ".git"],
+      "launchDefaults": { "request": "launch", "justMyCode": false, "stopOnEntry": true },
+      "attachDefaults": { "request": "attach", "justMyCode": false }
+    },
+    "dlv": {
+      "command": "dlv",
+      "args": ["dap"],
+      "connectMode": "socket",
+      "languages": ["go"],
+      "fileTypes": [".go"],
+      "rootMarkers": ["go.mod", "go.sum", "go.work", ".git"],
+      "acceptsDirectoryProgram": true,
+      "launchDefaults": { "request": "launch", "mode": "debug", "stopOnEntry": true },
+      "attachDefaults": { "request": "attach", "mode": "local" }
+    },
+    "rdbg": {
+      "command": "rdbg",
+      "args": ["--open", "--command", "--"],
+      "languages": ["ruby"],
+      "fileTypes": [".rb", ".rake", ".gemspec"],
+      "rootMarkers": ["Gemfile", "Rakefile", ".ruby-version", ".git"],
+      "launchDefaults": { "request": "launch", "type": "rdbg" },
+      "attachDefaults": { "request": "attach", "type": "rdbg" }
+    }
+  }
+}

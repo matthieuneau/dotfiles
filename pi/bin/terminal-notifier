@@ -1,0 +1,40 @@
+#!/bin/bash
+# Wrapper for node-notifier's vendored terminal-notifier binary.
+#
+# node-notifier (@pi-unipi/notify's native platform on macOS) invokes the
+# vendored unsigned terminal-notifier binary, which macOS 26+ silently drops
+# (never registers in the notification database, no banners). This wrapper
+# re-implements the subset of the CLI that node-notifier uses (-title,
+# -message, -sound) via osascript "display notification", which is attributed
+# to Script Editor and works.
+#
+# Unknown flags (-json, -timeout, -group, -activate, ...) are ignored.
+
+TITLE=""
+MESSAGE=""
+SOUND=""
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    -title)   TITLE="$2";   shift 2 ;;
+    -message) MESSAGE="$2"; shift 2 ;;
+    -sound)   SOUND="$2";   shift 2 ;;
+    *) shift ;;
+  esac
+done
+
+# Escape for AppleScript string literals (backslash and double quote).
+esc() {
+  printf '%s' "$1" | sed -e 's/\\/\\\\/g' -e 's/"/\\"/g'
+}
+
+T="$(esc "$TITLE")"
+M="$(esc "$MESSAGE")"
+
+SCRIPT="display notification \"$M\" with title \"$T\""
+if [[ -n "$SOUND" && "$SOUND" != "false" ]]; then
+  SCRIPT="$SCRIPT sound name \"$(esc "$SOUND")\""
+fi
+
+osascript -e "$SCRIPT" >/dev/null 2>&1
+exit 0
